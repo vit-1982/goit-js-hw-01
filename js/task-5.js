@@ -7,40 +7,29 @@ if (country !== null) {
   switch (country) {
     case 'Китай':
       deliveryPrice = 100;
-      console.log(
-        `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`,
-      );
       break;
 
     case 'Чили':
       deliveryPrice = 250;
-      console.log(
-        `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`,
-      );
       break;
 
     case 'Австралия':
       deliveryPrice = 170;
-      console.log(
-        `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`,
-      );
       break;
 
     case 'Индия':
       deliveryPrice = 80;
-      console.log(
-        `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`,
-      );
       break;
 
     case 'Ямайка':
       deliveryPrice = 120;
-      console.log(
-        `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`,
-      );
       break;
 
     default:
       alert('В вашей стране доставка не доступна');
   }
+}
+
+if (deliveryPrice > 0) {
+  console.log(`Доставка в ${country} будет стоить ${deliveryPrice} кредитов`);
 }
